@@ -1,0 +1,29 @@
+.loginArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.imageArea {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Cor de fundo opcional */
+}
+
+.img {
+    width: 50vw;
+}
+
+.logo {
+    width: 15vw;
+    position: absolute;
+    justify-self: center;
+}

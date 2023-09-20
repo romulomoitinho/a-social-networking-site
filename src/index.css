@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto+Flex:opsz,wght@8..144,400;8..144,600;8..144,900&display=swap');
 
 *{
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 }
+
+
 :root {
   font-family: 'Poppins', sans-serif ;
 
@@ -18,4 +21,6 @@
   --gray-650: #27282F;
   --gray-600: #2E2F36;
   --gray-300: #75767D;
+
+  --login-gradient: linear-gradient(180deg, var(--gray-600) 0%, var(--gray-900) 100%);
 }

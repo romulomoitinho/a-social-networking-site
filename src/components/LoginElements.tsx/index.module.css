@@ -1,0 +1,33 @@
+.container {
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    width: 30vw;
+    gap: 1.5rem; 
+}
+
+.title {
+    color: var(--white);
+    font-size: 12rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+}
+
+.text {
+    color: var(--white);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal; 
+}
+
+.subTitle {
+    color: var(--white);
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+}

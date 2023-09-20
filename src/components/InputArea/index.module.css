@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 2.875rem;
+    padding-inline: 1.5rem;
+    border: 2px solid var(--white);
+    justify-content: space-between;
+}
+
+.container input {
+    border: none;
+    background: none;
+    outline: none;
+    display: flex; 
+    margin: 1.1875rem 1.5rem;
+    align-items: center;
+}
+
+.container:last-child() {
+    align-items: end;
+}
