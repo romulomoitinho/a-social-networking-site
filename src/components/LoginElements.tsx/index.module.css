@@ -9,25 +9,32 @@
 }
 
 .title {
-    color: var(--white);
-    font-size: 12rem;
+    font-size: 4rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal; 
 }
 
 .text {
-    color: var(--white);
-    font-size: 2rem;
+    font-size: 1rem;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: normal; 
 }
 
 .subTitle {
-    color: var(--white);
-    font-size: 4rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal; 
+}
+
+.lastText {
+    color: var(--white);
+    align-self: center;
+    font-size: 1rem;
+}
+
+.lastText a {
+    text-decoration: none;
 }
