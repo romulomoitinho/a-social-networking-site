@@ -1,6 +1,6 @@
 import Classes from './index.module.css'
 import InputArea from '../InputArea';
-import Button from './../Button'
+import Button from '../Button'
 import { User, Lock } from '@phosphor-icons/react';
 
 const LoginElements: React.FC = () => {
@@ -13,7 +13,7 @@ const LoginElements: React.FC = () => {
         <InputArea icone={<User />} placeholder={'Usuário'}></InputArea>
         <InputArea icone={<Lock  />} placeholder={'Senha'}></InputArea>
         <Button/>
-        <p className={Classes.lastText}>Novo por aqui?<a href=""> Registre-se</a></p>
+        <p className={Classes.lastText}>Novo por aqui?<a href="/register"> Registre-se</a></p>
     </div>    
     ) 
 }

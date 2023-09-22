@@ -2,15 +2,15 @@ import Classes from './index.module.css';
 import React from 'react';
 import './index.css';
 import Laptop from './../../assets/img/login-laptop.jpeg'
-import LoginElements from '../../components/LoginElements/index.tsx';
+import RegisterElements from '../../components/RegisterElements';
 import Logo from './../../assets/img/compass.uol_Negativo 1.svg'
 
-const LoginPage = () => {
+const RegisterPage = () => {
     return (
     <>
     <main className={Classes.main}>
             <div className={Classes.loginArea}>
-                <LoginElements />
+                <RegisterElements />
             </div>
             <div className={Classes.imageArea}>
                 <img src={Laptop} alt='A laptop image' className={Classes.img}></img>
@@ -25,4 +25,4 @@ const LoginPage = () => {
     ) 
 }
 
-export default LoginPage;
+export default RegisterPage;
