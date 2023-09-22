@@ -1,5 +1,4 @@
 import Classes from './index.module.css';
-import React from 'react';
 import './index.css';
 import Laptop from './../../assets/img/login-laptop.jpeg'
 import RegisterElements from '../../components/RegisterElements';

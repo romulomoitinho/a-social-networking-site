@@ -35,6 +35,13 @@
     font-size: 1rem;
 }
 
+.alertText {
+    color: var(--yellow);
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
 .lastText a {
     text-decoration: none;
 }
