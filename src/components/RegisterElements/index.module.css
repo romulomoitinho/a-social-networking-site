@@ -33,6 +33,7 @@
     color: var(--white);
     align-self: center;
     font-size: 1rem;
+    font-weight: 400;
 }
 
 .alertText {
@@ -44,4 +45,5 @@
 
 .lastText a {
     text-decoration: none;
+    font-weight: 600;
 }
