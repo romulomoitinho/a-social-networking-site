@@ -10,7 +10,8 @@
 
 :root {
   font-family: 'Poppins', sans-serif ;
-
+  background-color: var(--gray-900);
+  
   --white: #F5F5F5;
   --black: #000000;
   --orange: #FE2E05;

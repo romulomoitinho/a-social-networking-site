@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    width: 15rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 2px solid var(--gray-600);
+}
