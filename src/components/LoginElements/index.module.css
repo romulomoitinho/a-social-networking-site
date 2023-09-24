@@ -29,12 +29,21 @@
     line-height: normal; 
 }
 
+.alertText {
+    color: var(--yellow);
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
 .lastText {
     color: var(--white);
     align-self: center;
     font-size: 1rem;
+    font-weight: 400;
 }
 
 .lastText a {
     text-decoration: none;
+    font-weight: 600;
 }

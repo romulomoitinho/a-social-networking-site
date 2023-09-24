@@ -18,6 +18,10 @@
     color: var(--white);
 }
 
+.yellowBorder {
+    border: 2px solid var(--yellow);
+}
+
 .container:last-child() {
     align-items: end;
 }
