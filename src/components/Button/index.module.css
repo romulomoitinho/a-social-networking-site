@@ -9,6 +9,7 @@
 }
 
 .container button {
+    padding: 1rem 1.5rem;
     border-radius: 2.875rem;
     border: none;
     background: none;
@@ -16,7 +17,6 @@
     align-content: center;
     outline: none;
     width: 100%;
-    height: 2.5rem;
     display: flex; 
     flex-wrap: wrap;
     cursor: pointer;

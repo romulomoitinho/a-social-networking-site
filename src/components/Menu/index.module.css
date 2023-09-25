@@ -12,5 +12,6 @@
 
 .img {
     width: 15rem;
-    height: 3rem;
+    height: 2rem;
+    object-fit: cover;
 }

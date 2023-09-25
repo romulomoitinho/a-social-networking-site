@@ -3,6 +3,7 @@ import Classes from "./index.module.css";
 import InputArea from "../InputArea";
 import Button from "../Button";
 import { User, Lock } from "@phosphor-icons/react";
+import { Link } from "react-router-dom";
 
 const LoginElements: React.FC = () => {
   const userPasswordAlert = false;
@@ -63,7 +64,7 @@ const LoginElements: React.FC = () => {
         )}
         <Button  onSubmit={handleSubmit} text={'Entrar'}/>
       <p className={Classes.lastText}>
-        Novo por aqui?<a href="/register"> Registre-se</a>
+        Novo por aqui?<Link to="/register"> Registre-se</Link>
       </p>
     </div>
   );

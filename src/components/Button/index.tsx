@@ -1,7 +1,7 @@
 import Classes from './index.module.css';
 
 interface buttonProps {
-    onSubmit: (event: React.FormEvent) => void;
+    onSubmit?: (event: React.FormEvent) => void;
     text: string
   }
 
