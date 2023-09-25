@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+}
+
+.button {
+    border: none;
+    background: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.selected_button * {
+    fill: yellow;
+    color: yellow;
+}
+
+.button_counter {
+    border-radius: 1rem;
+    background: var(--gray-650);
+    padding: 0.125rem 0.375rem; 
+    color: #FFF;
+    font-family: Inter;
+    font-size: 0.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+
+.button_counter_selected {
+    color: white;
+    background: var(--yellow, #E9B425);
+}
+

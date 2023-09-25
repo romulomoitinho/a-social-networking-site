@@ -1,0 +1,28 @@
+.loginArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.imageArea {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.img {
+    width: 50vw;
+}
+
+.logo {
+    width: 15vw;
+    position: absolute;
+    justify-self: center;
+}

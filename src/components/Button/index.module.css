@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 2.875rem;
+    border: 1px solid var(--orange);
+    justify-content: space-between;
+    background: var(--button-gradient);
+}
+
+.container button {
+    padding: 1rem 1.5rem;
+    border-radius: 2.875rem;
+    border: none;
+    background: none;
+    justify-content: center;
+    align-content: center;
+    outline: none;
+    width: 100%;
+    display: flex; 
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.container button:hover{
+    color: var(--black);
+}

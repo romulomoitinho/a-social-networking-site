@@ -1,0 +1,49 @@
+.container {
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    width: 30vw;
+    gap: 1.5rem; 
+}
+
+.title {
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+}
+
+.text {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+
+.subTitle {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+}
+
+.alertText {
+    color: var(--yellow);
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.lastText {
+    color: var(--white);
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.lastText a {
+    text-decoration: none;
+    font-weight: 600;
+}
