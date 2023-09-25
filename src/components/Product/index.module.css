@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem; 
+}
+
+.container p {
+    font-family: Poppins;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+
+.priceText {
+    color: var(--gray-300);
+    font-family: Poppins;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}

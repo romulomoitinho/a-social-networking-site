@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.yourComent {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch; 
+}
+
+.userImage {
+    border-radius: 2.625rem;
+    width: 2.625rem;
+    height: 2.625rem;
+}
+
+.textArea {
+    display: flex;
+    padding: 0.5rem 1.5rem; 
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0; 
+    border-radius: 2.875rem;
+    background: var(--gray-gray-650, #27282F); 
+}
+
+.textArea input{
+    color: var(--gray-gray-300, #75767D);
+    background: none;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    font-family: Poppins;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.textArea div {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.0625rem;
+}
+
+.textArea div * {
+    width: 1rem;
+    height: 1rem; 
+}
+
+.textArea div button {
+   background: none;
+   border: none;
+   outline: none;
+}

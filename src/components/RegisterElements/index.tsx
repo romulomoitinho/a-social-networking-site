@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import Classes from "./index.module.css";
 import InputArea from "../InputArea";
 import Button from "./../Button";
@@ -141,7 +142,7 @@ const LoginElements: React.FC = () => {
       <Button onSubmit={handleSubmit} text={"Registrar-se"} />
 
       <p className={Classes.lastText}>
-        Já possuí uma conta?<a href="/login"> Faça Login</a>
+        Já possuí uma conta? <Link to="/login"> Faça Login</Link>
       </p>
     </div>
   );
