@@ -4,6 +4,7 @@ import Menu from "../../components/Menu";
 import WhatInYourMind from "../../components/WhatInYourMind";
 import Classes from "./index.module.css"
 import MyFriends from "../../components/MyFriends";
+import PopularProducts from "../../components/PopularProducts";
 
 const HomePage = () => {
     const { menuOpen } = useMenu();
@@ -14,7 +15,7 @@ const HomePage = () => {
             <Header />
             <div className={Classes.postElements}>
                 <WhatInYourMind></WhatInYourMind>
-                <div><MyFriends/></div>
+                <div className={Classes.sideSection}><MyFriends/><PopularProducts/></div>
             </div>
         </div>    
     </main>

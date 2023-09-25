@@ -21,3 +21,7 @@
     flex-wrap: wrap;
     cursor: pointer;
 }
+
+.container button:hover{
+    color: var(--black);
+}

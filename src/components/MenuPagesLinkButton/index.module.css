@@ -20,7 +20,15 @@
     font-weight: 400;
 }
 
+.button:hover {
+    color: var(--orange);
+}
+
 .selected_button {
     background: var(--orange);
     color: black;
+}
+
+.selected_button:hover {
+    color: var(--white);
 }
