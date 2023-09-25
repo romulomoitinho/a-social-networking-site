@@ -16,6 +16,15 @@
     align-self: stretch; 
 }
 
+.postSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    flex: 1 0 0;
+    align-self: stretch; 
+}
+
 .sideSection {
     display: flex;
     width: 17rem;

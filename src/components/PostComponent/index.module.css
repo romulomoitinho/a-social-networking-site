@@ -1,3 +1,93 @@
 .container {
+    display: flex;
+    padding: 1rem 0rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+    border-radius: 1rem;
+    border: 2px solid var(--gray-600);
+    background: var(--gray-700);
+}
 
+.textAndPostInfo {
+    display: flex;
+    padding: 0rem 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem; 
+}
+
+.userAndTitle {
+    display: flex;
+    gap: 1rem; 
+}
+
+.userImage {
+    width: 2rem;
+    height: 2rem;
+    flex-shrink: 0;
+    border-radius: 2rem; 
+}
+
+.aboutTime {
+    color: var(--gray-300);
+    font-family: Poppins;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+
+.aboutPlace {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+}
+
+.postInfo {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem; 
+}
+
+.userTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.postText {
+    width: 42.375rem; 
+}
+
+.postText p {
+    color: var(--white);
+    font-family: Poppins;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+
+.postImg {
+    align-self: stretch; 
+}
+
+.postImg img {
+    height: 18.75rem;
+    width: 100%;
+}
+
+.interectionSection {
+    display: flex;
+    height: 2.1875rem;
+    padding: 0.625rem 3rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch; 
 }
