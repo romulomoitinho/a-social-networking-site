@@ -1,0 +1,9 @@
+.container {
+    display: grid;
+    grid-template-columns: 21.875rem 3fr;
+    background: var(--gray-900, #17181C);
+}
+
+.closed_menu {
+    grid-template-columns: 1fr;
+}

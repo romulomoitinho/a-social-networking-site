@@ -5,7 +5,8 @@
     align-items: start;
     flex-direction: column;
     width: 30vw;
-    gap: 1.5rem; 
+    gap: 1.5rem;
+    margin-block: 2rem;
 }
 
 .title {

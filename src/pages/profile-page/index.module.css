@@ -1,0 +1,177 @@
+.container {
+  display: grid;
+  grid-template-columns: 21.875rem 3fr;
+  background: var(--gray-900);
+}
+
+.closed_menu {
+  grid-template-columns: 1fr;
+}
+
+.body {
+  display: flex;
+  padding: 2.25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.25rem;
+  align-self: stretch;
+}
+
+.usersImageJobImage {
+  display: flex;
+  height: 25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.625rem;
+  align-self: stretch;
+  border-radius: 1rem;
+  border: 2px solid var(--gray-600);
+  background: var(--gray-700);
+}
+
+.backGroundPhoto {
+  height: 17.5rem;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-radius: 1rem;
+}
+
+.profileName {
+  width: 24.85669rem;
+  height: 14.8125rem;
+  flex-shrink: 0;
+  position: relative;
+  left: 2.875rem;
+  bottom: 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-items: end;
+}
+
+.userImage {
+  width: 11.23875rem;
+  height: 11.23875rem;
+  border-radius: 11.23875rem;
+  position: relative;
+  bottom: 3rem;
+}
+
+.usersNameOccupation {
+  width: 14.9315rem;
+  flex-shrink: 0;
+}
+
+.userName {
+  color: var(--yellow);
+  font-family: Nunito;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.userOccupation {
+  color: var(--yellow);
+  font-family: Nunito;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.7;
+}
+
+.editButton {
+  align-self: end;
+  position: relative;
+  right: 8.75rem;
+  bottom: 14rem;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+  
+}
+
+.aboutUser {
+  display: flex;
+  padding: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 1rem;
+  border: 2px solid var(--gray-600);
+  background: var(--gray-700);
+}
+
+.aboutUserInfo {
+  display: flex;
+  width: 20rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.aboutUserInfo p {
+  display: flex;
+  gap: 0.625rem;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  font-family: Nunito;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.7;
+  fill: var(--white);
+}
+
+.line {
+  width: 14.4375rem;
+  height: 0.03125rem;
+  opacity: 0.1;
+  border: none;
+  border-top: 1px solid #030229;
+}
+
+.followPosts {
+  display: flex;
+  height: 41.5rem;
+  padding: 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex: 1 0 0;
+  border-radius: 1rem;
+}
+
+.title {
+  display: flex;
+  gap: 2rem;
+}
+
+.title p {
+  color: var(--yellow);
+  text-align: center;
+  font-family: Nunito;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.title p.selected {
+  font-weight: 800;
+}
+
+.lineFollowPosts {
+  width: 35.875rem;
+  height: 0.0625rem;
+  opacity: 0.1;
+  background: #f5f5f5;
+}

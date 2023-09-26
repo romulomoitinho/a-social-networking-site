@@ -24,7 +24,7 @@ const MenuPagesLink: React.FC = () => {
       />
       </Link>
 
-      <Link to="/home" className={Classes.removingDecorations}>
+      <Link to="/marketplace" className={Classes.removingDecorations}>
       <Button
         idButton={"marketplace"}
         text={"Marketplace"}

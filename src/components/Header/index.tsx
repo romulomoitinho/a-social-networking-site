@@ -1,4 +1,4 @@
-import { useMenu } from './../../context/MenuContext';
+import { useMenu } from '../../context/MenuContext';
 import Classes from './index.module.css'
 import ArrowFatLeft from './../../assets/img/ArrowFatLeft.svg'
 import ArrowFatRight from './../../assets/img/ArrowFatRight.svg'
