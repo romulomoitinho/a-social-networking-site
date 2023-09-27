@@ -8,7 +8,9 @@ import PostComponent from "../../components/PostComponent";
 import ModalProfile from "../../components/ModalProfile";
 import { useState } from "react";
 
+
 const ProfilePage = () => {
+
   const { menuOpen } = useMenu();
   const UserName = "Eduarda Pereira";
   const Occupation = "UI/UX Designer";

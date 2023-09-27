@@ -28,8 +28,10 @@ const LoginElements: React.FC = () => {
   const handleSubmit  = async (event: React.FormEvent) => {
     event.preventDefault();
     console.log({user, password})
-    await login();
-    navigate('/home')
+    
+    if(await login(user, password)) {
+      navigate('/home')
+    }
   };
 
 
