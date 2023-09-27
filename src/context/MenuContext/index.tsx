@@ -1,9 +1,9 @@
 import { createContext, useContext, useState, ReactNode } from 'react';
 
-type MenuContextType = {
+interface MenuContextType {
   menuOpen: boolean;
   toggleMenu: () => void;
-};
+}
 
 const MenuContext = createContext<MenuContextType | undefined>(undefined);
 
@@ -15,9 +15,9 @@ export function useMenu(): MenuContextType {
   return context;
 }
 
-type MenuProviderProps = {
+interface MenuProviderProps {
   children: ReactNode;
-};
+}
 
 export function MenuProvider({ children }: MenuProviderProps) {
   const [menuOpen, setMenuOpen] = useState(true);

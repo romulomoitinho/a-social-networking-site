@@ -8,6 +8,11 @@
     background: var(--button-gradient);
 }
 
+.grayBackground {
+    background: var(--login-gradient);
+    border-color: var(--gray-900);
+}
+
 .container button {
     padding: 1rem 1.5rem;
     border-radius: 2.875rem;
