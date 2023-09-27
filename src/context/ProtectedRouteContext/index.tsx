@@ -14,12 +14,12 @@ const ProtectedRoute: React.FC<ProtectedRouteProps> = ({
   const { isAuthenticated } = useContext(AuthContext);
   console.log({taautendicado: isAuthenticated})
   console.log(path)
-  console.log({pathcorreto: path == '/'})
+
   return (
         isAuthenticated && path == '/login' || isAuthenticated && path == '/register' || isAuthenticated && path == '/' ? (
             <Navigate to="/home" replace/>
           ) : (
-            !isAuthenticated && path == '/' ? <Navigate to="/login" replace/> : 
+            !isAuthenticated ? <Navigate to="/login" replace/> : 
             <Component />
             )
           );
