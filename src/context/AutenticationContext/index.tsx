@@ -27,7 +27,6 @@ const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     if (token) {
       api.defaults.headers.Authorization = `Bearer ${JSON.parse(token)}`;
       setIsAuthenticated(true);
-      console.log("o que eu tô fazendo da minha vida");
     }
   }, []);
 
@@ -46,10 +45,15 @@ const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
         const {
           data: { token },
         } = response;
+
+        const {
+          data: { usuario },
+        } = response;
+
         if (token) {
           console.log(token);
           localStorage.setItem("token", JSON.stringify(token));
-          localStorage.setUs
+          localStorage.setItem("user", JSON.stringify(usuario['usuario']));
           api.defaults.headers.Authorization = `Bearer ${token}`;
           setIsAuthenticated(true);
           return true;
@@ -69,7 +73,8 @@ const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     console.log("used");
     setIsAuthenticated(false);
     localStorage.removeItem("token");
-    api.defaults.headers.Authorization = '';
+    localStorage.removeItem("user");
+    api.defaults.headers.Authorization = "";
     return true;
   };
 
