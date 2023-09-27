@@ -6,9 +6,24 @@ import Button from "../../components/Button";
 import { Cake, Envelope, MapPin, Phone, User } from "@phosphor-icons/react";
 import PostComponent from "../../components/PostComponent";
 import ModalProfile from "../../components/ModalProfile";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { api } from "../../api";
+import { AxiosResponse } from "axios";
 
 const ProfilePage = () => {
+  useEffect(() => {
+    const profileData = async () => {
+      try {
+        const response: AxiosResponse = await api.get('/usuarios');
+        console.log(response);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+  
+    profileData();
+  }, []);
+
   const { menuOpen } = useMenu();
   const UserName = "Eduarda Pereira";
   const Occupation = "UI/UX Designer";

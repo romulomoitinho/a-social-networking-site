@@ -5,13 +5,16 @@ import { AuthContext } from './../../context/AutenticationContext';
 import { useContext } from "react";
 
 const MenuPagesLink: React.FC = () => {
-  const { logout } = useContext(AuthContext);
+  const { logout, isAuthenticated } = useContext(AuthContext);
   const { pathname } = useLocation();
   const navigate = useNavigate()
   
   const onLogout = async () => {
-    await logout()
-    navigate('/login')
+    if (await logout()) {
+      console.log({logoutAut: isAuthenticated})
+      navigate('/login')
+    }
+    
   }
   return (
     <div className={Classes.container}>
