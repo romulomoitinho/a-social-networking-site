@@ -1,11 +1,18 @@
-import { useLocation, Link } from "react-router-dom";
+import { useLocation, Link, useNavigate } from "react-router-dom";
 import Classes from "./index.module.css";
 import Button from "./../MenuPagesLinkButton";
+import { AuthContext } from './../../context/AutenticationContext';
+import { useContext } from "react";
 
 const MenuPagesLink: React.FC = () => {
+  const { logout } = useContext(AuthContext);
   const { pathname } = useLocation();
-  console.log(pathname);
-
+  const navigate = useNavigate()
+  
+  const onLogout = async () => {
+    await logout()
+    navigate('/login')
+  }
   return (
     <div className={Classes.container}>
       <Link to="/home" className={Classes.removingDecorations}>
@@ -31,10 +38,8 @@ const MenuPagesLink: React.FC = () => {
         selected={pathname === "/marketplace"}
       />
       </Link>
-
-      <Link to="/login" className={Classes.removingDecorations}>
-        <Button idButton={"logout"} text={"Sair"} selected={false} />
-      </Link>
+      
+        <Button idButton={"logout"} text={"Sair"} selected={false} handleSubmit={onLogout}/>
     </div>
   );
 };

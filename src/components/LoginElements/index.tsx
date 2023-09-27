@@ -1,11 +1,15 @@
-import { useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import Classes from "./index.module.css";
 import InputArea from "../InputArea";
 import Button from "../Button";
 import { User, Lock } from "@phosphor-icons/react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from './../../context/AutenticationContext';
+
 
 const LoginElements: React.FC = () => {
+  const { login } = useContext(AuthContext);
+
   const userPasswordAlert = false;
   const inputRefUser = useRef<HTMLInputElement | null>(null);
   const inputRefPassword = useRef<HTMLInputElement | null>(null);
@@ -20,10 +24,15 @@ const LoginElements: React.FC = () => {
     setPassword(data);
   };
 
-  const handleSubmit = (event: React.FormEvent) => {
+  const navigate = useNavigate();
+  const handleSubmit  = async (event: React.FormEvent) => {
     event.preventDefault();
     console.log({user, password})
+    await login();
+    navigate('/home')
   };
+
+
 
   return (
     <div className={Classes.container}>
